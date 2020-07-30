@@ -1,20 +1,22 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Logo from '../../assets/img/Logo.png'
 import './Menu.css';
 import Button from '../Button';
 function Menu  () {
-    return (
+ return (
 
-        <nav className="Menu">
-    <a href= "/">   
+     <nav className="Menu">
+    <Link to="/"> 
     <img className="Logo" src={Logo} alt="Geekflix logo" />
-            </a>
+            
+    </Link>   
            
-           <Button as="a" className="ButtonLink" href="/"> 
+    <Button as={Link} className="ButtonLink" to="/cadastro/video">
             Novo vídeo
            </Button>
-            </nav>
-    );
+    </nav>
+ );
 }
 
 export default Menu ;
