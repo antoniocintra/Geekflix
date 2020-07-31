@@ -29,4 +29,4 @@ function CadastroCategoria() {
   )
 }
 
-export default CadastroCategoria; 
+export default CadastroCategoria;

@@ -1,6 +1,6 @@
 import React from 'react';
-import Footer from '../Footer';
 import Menu from '../Menu';
+import Footer from '../Footer';
 import styled from 'styled-components';
 
 const Main = styled.main `
@@ -14,7 +14,7 @@ background-color: var(--black);
 `;
 function PageDefault ({children}) {
 return(
-<React.Fragment>
+<>
 
 <Menu/>
 <Main>
@@ -22,7 +22,7 @@ return(
 
 </Main>
 <Footer />
-</React.Fragment>
+</>
 );
 
 }
